@@ -1,6 +1,7 @@
 (ns clojure-noob.core
   (:gen-class))
-
+;; Sum To Target
+;; main function: (sumToTarget [1 2 3 4] 10)
 (defn checkAny [target] #(if (contains? %1 (- target %2))
 	(reduced true)
 	(conj %1 %2)))
@@ -9,6 +10,8 @@
 	(def checkTarget (checkAny target))
 	(= true (reduce checkTarget #{} input)))
 
+;; Print Spiral
+;; main function: (printSpiral input)
 (def input [["H" "A" "V"] ["D" "A" "E"] ["E" "Y" "A"] ["C" "I" "N"]])
 
 (defn printExceptLast [inputArray layer]
@@ -39,6 +42,8 @@
 			(recur (inc layer))
 			)))
 
+;; Anagrams
+;; main function: (anagram words)
 (def words ["stop" "psto" "pots" "abc" "cba" "hello" "olleh" "hi"])
 
 (defn sortString [hmap input]
