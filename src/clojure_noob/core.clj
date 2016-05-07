@@ -7,8 +7,8 @@
 	(conj %1 %2)))
 
 (defn sumToTarget [input target] 
-	(def checkTarget (checkAny target))
-	(= true (reduce checkTarget #{} input)))
+	(let [checkTarget (checkAny target)]
+	(= true (reduce checkTarget #{} input))))
 
 ;; Print Spiral
 ;; main function: (printSpiral input)
