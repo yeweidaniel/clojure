@@ -1,10 +1,10 @@
 # clojure-noob
 
-FIXME: description
+Practice problems
 
 ## Installation
 
-Download from http://example.com/FIXME.
+None Required
 
 ## Usage
 
